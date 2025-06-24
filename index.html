@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João | Portfólio Biotecnologia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>João e a Biotecnologia</h1>
+    <p>Bem-vindo ao meu portfólio! Sou apaixonado por Biotecnologia e aqui compartilho tudo sobre as suas cores e aplicações.</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn" onclick="openTab('vermelha')">🔴 Vermelha</button>
+    <button class="tab-btn" onclick="openTab('verde')">🟢 Verde</button>
+    <button class="tab-btn" onclick="openTab('branca')">⚪ Branca</button>
+    <button class="tab-btn" onclick="openTab('azul')">🔵 Azul</button>
+  </nav>
+
+  <section id="vermelha" class="tab-content">
+    <h2>Biotecnologia Vermelha</h2>
+    <p>A Biotecnologia Vermelha está ligada à área da saúde. Envolve vacinas, terapias genéticas, produção de antibióticos e engenharia genética para melhorar tratamentos médicos.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/DNA_double_helix_horizontal.png/800px-DNA_double_helix_horizontal.png" alt="DNA" />
+  </section>
+
+  <section id="verde" class="tab-content">
+    <h2>Biotecnologia Verde</h2>
+    <p>Relacionada à agricultura. Utiliza técnicas como transgênicos, biofertilizantes e controle biológico de pragas, promovendo uma agricultura mais sustentável.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Genetically_modified_tomato_crop.jpg" alt="Plantações" />
+  </section>
+
+  <section id="branca" class="tab-content">
+    <h2>Biotecnologia Branca</h2>
+    <p>Aplicada na indústria. Produz enzimas, biocombustíveis e materiais biodegradáveis para reduzir impactos ambientais e aumentar a eficiência industrial.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Bioreactor.jpg/800px-Bioreactor.jpg" alt="Bioreator" />
+  </section>
+
+  <section id="azul" class="tab-content">
+    <h2>Biotecnologia Azul</h2>
+    <p>Explora o potencial dos oceanos. Desenvolve medicamentos, cosméticos e alimentos a partir de organismos marinhos.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Marine_biology.jpg/800px-Marine_biology.jpg" alt="Biotecnologia Marinha" />
+  </section>
+
+  <footer>
+    <p>Feito com 💙 por João | Apaixonado por Biotecnologia</p>
+  </footer>
+
+  <script>
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll(".tab-content");
+      tabs.forEach(tab => {
+        tab.style.display = "none";
+      });
+      document.getElementById(tabId).style.display = "block";
+    }
+
+    // Mostrar a primeira aba por padrão
+    document.addEventListener("DOMContentLoaded", () => openTab('vermelha'));
+  </script>
+</body>
+</html>

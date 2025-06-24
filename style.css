@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f0f4f8, #dce3ea);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #00557f;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Navegação */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background-color: #fff;
+  border: 2px solid #00557f;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #00557f;
+  color: white;
+}
+
+/* Conteúdo das Abas */
+.tab-content {
+  display: none;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tab-content h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #00557f;
+}
+
+.tab-content p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.tab-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .tab-btn {
+    flex: 1 1 100%;
+    font-size: 0.9em;
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+}
